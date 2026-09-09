@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="学习法语一到一百的拼写、国际音标和标准读音。" />
+    <meta name="theme-color" content="#122448" />
+    <title>法语数字 1–100｜读音学习</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <nav class="nav" aria-label="页面信息">
+          <span class="flag" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>NUMÉROS</span>
+          <span class="level">A1 · Débutant</span>
+        </nav>
+        <div class="hero-copy">
+          <p class="eyebrow">ÉCOUTER · RÉPÉTER · MÉMORISER</p>
+          <h1>Les nombres<br /><em>de 1 à 100</em></h1>
+          <p class="intro">点击任意卡片，听法语读音。每个数字均附法语拼写和国际音标。</p>
+          <button class="listen-button" id="listen-sample" type="button"><span aria-hidden="true">▶</span> 试听 1–10</button>
+        </div>
+        <div class="hero-number" aria-hidden="true">100</div>
+      </section>
+
+      <section class="content">
+        <div class="toolbar">
+          <div>
+            <p class="section-label">TABLEAU COMPLET</p>
+            <h2>选择一个数字开始练习</h2>
+          </div>
+          <label class="search">
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="搜索数字或法语单词" autocomplete="off" />
+          </label>
+        </div>
+        <div class="grid" id="number-grid" aria-live="polite"></div>
+        <p class="empty" id="empty-message" hidden>没有找到匹配的数字。</p>
+      </section>
+    </main>
+    <footer><span>Un petit pas chaque jour.</span><span>每天进步一点点 🇫🇷</span></footer>
+  </body>
+</html>
+
